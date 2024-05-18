@@ -1,7 +1,7 @@
 import { BiSolidUser } from "react-icons/bi";
 import { BiSolidPhone } from "react-icons/bi";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
 import css from "./Contact.module.css";
 
 export default function Contact({ contact: { id, name, number } }) {
