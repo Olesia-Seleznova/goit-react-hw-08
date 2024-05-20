@@ -3,8 +3,8 @@ import {
   fetchContacts,
   addContact,
   deleteContact,
+  editContact,
 } from "../contacts/operations";
-// import { selectFilteredContacts } from "../redux/filtersSlice";
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -53,6 +53,21 @@ const contactsSlice = createSlice({
         state.error = false;
       })
       .addCase(deleteContact.rejected, (state) => {
+        state.error = true;
+        state.loading = false;
+      })
+      .addCase(editContact.pending, (state) => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(editContact.fulfilled, (state, action) => {
+        state.items = state.items.map((contact) =>
+          contact.id === action.payload.id ? action.payload : contact
+        );
+        state.loading = false;
+        state.error = false;
+      })
+      .addCase(editContact.rejected, (state) => {
         state.error = true;
         state.loading = false;
       }),

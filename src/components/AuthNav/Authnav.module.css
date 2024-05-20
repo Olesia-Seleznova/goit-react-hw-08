@@ -1,0 +1,11 @@
+.div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
