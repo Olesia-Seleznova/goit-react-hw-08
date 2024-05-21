@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 20px;
+}
+
+.input {
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+  padding-left: 8px;
+}
+
+.button {
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+}
+.button:hover,
+.button:focus {
+  color: #000;
+  background-color: #fff;
+}
+.button:active {
+  transform: scale(97%);
+}
