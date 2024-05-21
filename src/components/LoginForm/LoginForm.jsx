@@ -11,7 +11,7 @@ export default function LoginForm() {
     dispatch(logIn({ email, password }))
       .unwrap()
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         toast.success("Login was successful!");
       })
       .catch((error) => console.log(error.message));
