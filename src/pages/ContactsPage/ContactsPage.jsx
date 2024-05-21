@@ -37,8 +37,8 @@ export default function ContactsPage() {
   };
 
   return (
-    <div>
-      <h1>Phonebook</h1>
+    <div className={css.div}>
+      <h1 className={css.h1}>Phonebook</h1>
       <ContactForm />
       <SearchBox value={filter} onSearch={handleFilterChange} />
       {isLoading && (
