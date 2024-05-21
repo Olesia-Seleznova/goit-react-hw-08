@@ -27,7 +27,7 @@ export default function RegistrationForm() {
       }}
       onSubmit={handleSubmit}
     >
-      <Form lassName={css.form} autoComplete="off">
+      <Form className={css.form} autoComplete="off">
         <label className={css.label}>
           Username
           <Field className={css.input} type="text" name="name" />
