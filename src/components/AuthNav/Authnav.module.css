@@ -1,11 +1,11 @@
 .div {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 40px;
 }
 
 .link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   color: #000;
 }
